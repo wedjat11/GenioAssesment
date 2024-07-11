@@ -1,4 +1,3 @@
-import { useRouter } from 'next/router';
 import parse from 'html-react-parser';
 import DOMPurify from 'dompurify';
 
@@ -17,13 +16,11 @@ const Post = ({ post }) => {
 
   return (
     <div className="bg-gray-100 min-h-screen flex items-center justify-center">
-      <div className="bg-white shadow-md rounded-lg overflow-hidden w-80">
-        <div className="container mx-auto px-4 py-8">
-          <article className="prose max-w-none">
-            <h1 className="text-3xl font-bold mb-4">{post.title.rendered}</h1>
-            <div>{parsedContent}</div>
-          </article>
-        </div>
+      <div className="bg-white shadow-md rounded-lg overflow-hidden w-4/5 mx-auto p-8 text-black">
+        <article className="prose max-w-none">
+          <h1 className="text-3xl font-bold mb-4">{post.title.rendered}</h1>
+          <div>{parsedContent}</div>
+        </article>
       </div>
     </div>
   );
