@@ -1,6 +1,4 @@
-// pages/index.js
 import PostList from '../components/PostList';
-
 
 export async function getServerSideProps() {
   const res = await fetch('https://fernandafamiliar.soy/wp-json/wp/v2/posts');
@@ -11,8 +9,8 @@ export async function getServerSideProps() {
   };
 }
 
-const Home = ({ posts }) => {
+const HomePage = ({ posts }) => {
   return <PostList posts={posts} />;
 };
 
-export default Home;
+export default HomePage;

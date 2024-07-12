@@ -31,3 +31,12 @@ body {
     text-wrap: balance;
   }
 }
+
+.post-content a {
+  @apply text-red-600 underline;
+}
+
+.post-content a:hover {
+  @apply text-red-600 no-underline;
+}
+
