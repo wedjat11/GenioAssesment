@@ -7,7 +7,7 @@ const PostContent = ({ post }) => {
 
   return (
     <article className="prose max-w-none">
-      <h1 className="text-3xl font-bold mb-4 text-red-500">{post.title.rendered}</h1>
+      <h1 className="text-3xl font-bold mb-6 text-red-500">{post.title.rendered}</h1>
       <div className="post-content text-[#242423]">{parsedContent}</div>
     </article>
   );

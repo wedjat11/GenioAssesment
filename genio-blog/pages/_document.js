@@ -6,12 +6,12 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          {/* Aquí puedes agregar otras etiquetas meta o enlaces */}
+         
         </Head>
         <body>
           <Main />
           <NextScript />
-          {/* Integrar Google Tag Manager */}
+          
           <Script
             id="gtm-script"
             strategy="afterInteractive"
