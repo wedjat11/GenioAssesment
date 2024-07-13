@@ -1,3 +1,4 @@
+// pages/_document.js
 import { Html, Head, Main, NextScript } from 'next/document';
 import Script from 'next/script';
 
@@ -5,6 +6,7 @@ export default function Document() {
   return (
     <Html>
       <Head>
+        {/* Google Tag Manager */}
         <Script
           id="gtm-script"
           strategy="afterInteractive"
@@ -18,15 +20,32 @@ export default function Document() {
             `,
           }}
         />
+        {/* Google Analytics */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-C0TL084ZS0"
+        ></Script>
+        <Script
+          id="ga4-script"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-C0TL084ZS0');
+            `,
+          }}
+        />
       </Head>
       <body>
         <noscript>
           <iframe
-            src={`https://www.googletagmanager.com/ns.html?id=GTM-MR7VRMNS`}
+            src="https://www.googletagmanager.com/ns.html?id=GTM-MR7VRMNS"
             height="0"
             width="0"
             style={{ display: 'none', visibility: 'hidden' }}
-          />
+          ></iframe>
         </noscript>
         <Main />
         <NextScript />
