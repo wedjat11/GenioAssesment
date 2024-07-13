@@ -9,6 +9,7 @@ Características
 -   **Carga de posts**: Los posts se cargan desde una API de WordPress y se muestran en una lista.
 -   **Vista de detalle del post**: Al hacer clic en un post, se muestra una vista detallada del mismo.
 -   **Navbar**: Un navbar fijo con enlaces a la página principal del blog y al repositorio de código en GitHub.
+-   **Metricas de Google**: se realizo la integracion de google analytics al sitio, con el cual se detectaran los siguientes eventos: Vistas de pagina, Vistas de una página cuando el historial del navegador cambia, Desplazamientos, Clics de salida, Interacciones con vídeos, Descargas de archivos
 
 Componentes
 -----------
@@ -90,6 +91,13 @@ Para ejecutar este proyecto localmente, sigue estos pasos:
     ```bash
     npm install
 4. Inicia el servidor de desarrollo:
+    ```bash
     npm run dev
+
+
+### Links
+## Vercel 
+https://genio-assesment.vercel.app
+
 
 
